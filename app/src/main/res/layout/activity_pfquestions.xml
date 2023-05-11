@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PFQuestions">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editName"
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Programming Fundamentals"
+        android:textColor="#000089"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/DQues"
+        android:textColor="@color/accent_material_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DispName"
+        android:layout_alignStart="@+id/DispName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/answersgrp"
+        android:clickable="true"
+        android:layout_centerVertical="true">
+        <!--android:layout-->
+        <!--android:checkedButton="@+id/radioButton"-->
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:id="@+id/radioButton3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:id="@+id/radioButton4"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/NQuestion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#000089"
+        android:text="Next Question"/>
+
+    <Button
+        android:id="@+id/Quitbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#000089"
+        android:text="Quit"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Questions"
+            android:id="@+id/tvque"
+            android:layout_marginBottom="52dp"
+            android:layout_above="@+id/answersgrp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by Muhammad Saad Mubeen"
+        android:layout_marginTop="800dp"
+        android:textSize="15dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignStart="@+id/editName"
+        android:textColor="#000089"
+        android:gravity="center" />
+
+</RelativeLayout>
